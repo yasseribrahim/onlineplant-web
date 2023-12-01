@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Plant </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           </head>
+<body style="background-color:powderblue;">
+
+    <CENTER>
+        <h1><span id="name"></span> Edit mobile </h1>
+        <br><hr>                                 
+        <form method="post" action="http://localhost:8080/onlineplant/webresources/myproduct/edit">
+            <table>
+               <tr> 
+                    <td>  product Id </td>
+                    <td><input type="text" id="id" name="id" readonly> </td>
+                </tr>
+                <tr> 
+                    <td>  client </td>
+                    <td><input type="text" id="clientid" name="clientid" readonly> </td>
+                </tr>
+                <tr> 
+                    <td>  product </td>
+                    <td><input type="text"  id="product" name="product">  </td>
+                </tr>
+                <tr> 
+                    <td> <input type="submit"  value=" Update the product"> </td>
+                </tr>
+            </table>
+        </form>
+          <!-- 
+java script code to pass parameter       -->
+        <script type="text/javascript">
+            //  const hash = '?name=ali&id=20';
+            // const example = "http://example.com/" + hash;
+            const urlParams = new URLSearchParams(window.location.search);
+            const c1 = urlParams.get('id');
+            const c2 = urlParams.get('client');
+            document.write('<p>product id: ' + c1 + '</p> ');
+            document.write('<p>client name: ' + c2 + '</p> ');
+            var transid = c1;
+            var client = c2;
+            document.getElementById("id").value = c1;
+            document.getElementById("clientid").value = c2;
+
+            document.getElementById("name").innerHTML = c2;
+
+        </script>
+    </CENTER>
+    <a href="./logout"> sign out from the system</a>
+
+</body>
+</html>

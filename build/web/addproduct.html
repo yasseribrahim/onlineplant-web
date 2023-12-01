@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online plant </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                color: green;
+                background-color: #E6E6FA;
+                align-content:cente;
+            }
+            table{
+                color: red;
+                background-color: yellow;
+                align-content: center
+            }
+
+        </style>
+
+
+    </head>
+    <body style="background-color:powderblue;">
+
+
+    <CENTER>
+        <h1><span id="name"></span> Add New product </h1>
+        <br><hr>                                 
+        <form method="post" action="http://localhost:8080/onlineplant/webresources/myproduct/add">
+            <table>
+               <tr> 
+                    <td>  product Id </td>
+                    <td><input type="text" id="id" name="id"> </td>
+                </tr>
+                <tr> 
+                    <td>  client </td>
+                    <td><input type="text" id="clientid" name="clientid" readonly> </td>
+                </tr>
+                <tr> 
+                    <td>  product </td>
+                    <td><input type="text"  id="product" name="product">  </td>
+                </tr>
+                <tr> 
+                    <td>  quantity </td>
+                    <td><input type="text" id="quantity" name="quantity"> </td>
+                </tr>
+                <tr> 
+                    <td>  status </td>
+                    <td><input type="text" id="status" name="status" value="new" readonly> </td>
+                </tr>
+                <tr> 
+                    <td> transaction </td>
+                    <td><input type="text" id="transid" name="transid" readonly> </td>
+                </tr>
+
+                <tr> 
+                    <td> <input type="submit"  value=" Add product"> </td>
+                </tr>
+            </table>
+        </form>
+        <script>
+            let name = "Nathan";
+            document.getElementById("name").innerHTML = name;
+            document.getElementById("xx").value = name;
+
+        </script>
+        <script type="text/javascript">
+            //  const hash = '?name=ali&id=20';
+            // const example = "http://example.com/" + hash;
+            const urlParams = new URLSearchParams(window.location.search);
+            const c1 = urlParams.get('transid');
+            const c2 = urlParams.get('client');
+            const c3 = urlParams.get('trans');
+            document.write('<p>transaction id: ' + c1 + '</p> ');
+            document.write('<p>client name: ' + c2 + '</p> ');
+            document.write('<p>' + c3 + '</p> <br><hr>');
+            var transid = c1;
+            var client = c2;
+            var trans = c3;
+            document.getElementById("transid").value = c1;
+            document.getElementById("clientid").value = c2;
+
+            document.getElementById("name").innerHTML = c2;
+
+            //   (new URL(urlParams)).searchParams.forEach((x, y) =>
+            //  document.getElementById(y).value = x);
+        </script>
+    </CENTER>
+    <a href="./logout"> logout from the system</a>
+
+</body>
+</html>

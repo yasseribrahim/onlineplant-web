@@ -1,0 +1,9 @@
+[{"id":"1","clientid":"buyer1","Transaction":"By mobile app","date":"22/11/2023"},
+{"id":"2","clientid":"cashiers","Transaction":"by phone","date":"23/11/2023"},
+{"id":"3","clientid":"buyer1","Transaction":"buy using mobile app","date":"10/11/2023"},
+{"id":"4","clientid":"cashiers","Transaction":"buy using mobile app","date":"10/11/2023"},
+{"id":"5","clientid":"buyer1","Transaction":"by phone","date":"09/11/2023"},
+{"id":"6","clientid":"buyer1","Transaction":"by phone","date":"10/11/2023"},
+{"id":"7","clientid":"buyer1","Transaction":"by phone","date":"21/11/2023"},
+{"id":"8","clientid":"buyer1","Transaction":"by phone","date":"10/11/2023"},
+{"id":"9","clientid":"buyer1","Transaction":"by phone","date":"11/11/2023"}]

@@ -136,6 +136,22 @@ public class DatasourceManager {
         storeFile(new File(Constants.PATH_DATA_TRANSACTIONS), json);
     }
 
+    public static boolean updatePlantStock(int id, int quantity) {
+        List<PlantStock> plants = loadPlantStocks();
+        boolean status = false;
+        for (PlantStock plant : plants) {
+            if (plant.getPlantId() == id) {
+                plant.setQuantity(quantity);
+                status = true;
+                break;
+            }
+        }
+
+        String json = convert(plants);
+        storeFile(new File(Constants.PATH_DATA_STOCKS), json);
+        return status;
+    }
+
     public static void addTransactionPlant(int id, int plantId, int quantity) {
         List<Transaction> transactions = loadTransactions();
         Transaction selectedTransaction = null;

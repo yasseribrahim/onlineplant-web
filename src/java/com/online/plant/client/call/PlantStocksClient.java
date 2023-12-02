@@ -7,6 +7,7 @@ package com.online.plant.client.call;
 
 import com.online.plant.data.DatasourceManager;
 import com.online.plant.models.PlantStock;
+import java.text.MessageFormat;
 import java.util.List;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
@@ -30,6 +31,17 @@ public class PlantStocksClient {
         try {
             String json = resource.request(MediaType.APPLICATION_JSON).get(String.class);
             return DatasourceManager.loadPlantStocks(json);
+        } catch (Exception ex) {
+            return null;
+        }
+    }
+
+    public String updatePlantStock(int id, int quantity) {
+        WebTarget resource = webTarget;
+        resource = resource.path(MessageFormat.format("/update/{0}", new Object[]{id})).queryParam("quantity", quantity);
+        try {
+            String response = resource.request(MediaType.APPLICATION_JSON).get(String.class);
+            return response;
         } catch (Exception ex) {
             return null;
         }

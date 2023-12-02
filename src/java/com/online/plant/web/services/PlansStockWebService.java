@@ -7,6 +7,8 @@ import javax.ws.rs.core.*;
 import javax.ws.rs.Produces;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.QueryParam;
 
 /**
  * REST Web Service
@@ -28,5 +30,13 @@ public class PlansStockWebService {
     public Response getPlantStocks() {
         List<PlantStock> plants = DatasourceManager.loadPlantStocks();
         return Response.status(200).entity(DatasourceManager.convert(plants)).build();
+    }
+
+    @GET
+    @Path("/update/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response addTransactionPlant(@PathParam("id") int id, @QueryParam("quantity") int quantity) {
+        boolean result = DatasourceManager.updatePlantStock(id, quantity);
+        return Response.status(200).entity(result ? "Updated Success" : "Not Found").build();
     }
 }

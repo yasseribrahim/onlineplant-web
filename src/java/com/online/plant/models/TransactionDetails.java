@@ -8,6 +8,9 @@ public class TransactionDetails {
     private int price;
     private int quantity;
 
+    public TransactionDetails() {
+    }
+
     public TransactionDetails(int id, String name, String type, int age, int price, int quantity) {
         this.id = id;
         this.name = name;

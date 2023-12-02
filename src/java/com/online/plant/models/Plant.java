@@ -7,6 +7,9 @@ public class Plant {
     private int age;
     private int price;
 
+    public Plant() {
+    }
+
     public Plant(int id, String name, String type, int age, int price) {
         this.id = id;
         this.name = name;
@@ -79,4 +82,11 @@ public class Plant {
         }
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "Plant{" + "id=" + id + ", name=" + name + ", type=" + type + ", age=" + age + ", price=" + price + '}';
+    }
+    
+    
 }

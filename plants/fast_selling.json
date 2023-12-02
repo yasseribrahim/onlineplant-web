@@ -1,0 +1,17 @@
+[
+  {
+    "plantId": 1,
+    "plantName": "Plant 1",
+    "quantity": 10
+  },
+  {
+    "plantId": 2,
+    "plantName": "Plant 2",
+    "quantity": 20
+  },
+  {
+    "plantId": 3,
+    "plantName": "Plant 3",
+    "quantity": 30
+  }
+]

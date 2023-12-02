@@ -1,0 +1,52 @@
+[
+  {
+    "plantId": 1,
+    "plantName": "Plant 1",
+    "quantity": 10
+  },
+  {
+    "plantId": 2,
+    "plantName": "Plant 2",
+    "quantity": 20
+  },
+  {
+    "plantId": 3,
+    "plantName": "Plant 3",
+    "quantity": 30
+  },
+  {
+    "plantId": 4,
+    "plantName": "Plant 4",
+    "quantity": 40
+  },
+  {
+    "plantId": 5,
+    "plantName": "Plant 5",
+    "quantity": 50
+  },
+  {
+    "plantId": 6,
+    "plantName": "Plant 6",
+    "quantity": 60
+  },
+  {
+    "plantId": 7,
+    "plantName": "Plant 7",
+    "quantity": 70
+  },
+  {
+    "plantId": 8,
+    "plantName": "Plant 8",
+    "quantity": 80
+  },
+  {
+    "plantId": 9,
+    "plantName": "Plant 9",
+    "quantity": 90
+  },
+  {
+    "plantId": 10,
+    "plantName": "Plant 10",
+    "quantity": 100
+  }
+]

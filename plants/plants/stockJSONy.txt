@@ -1,6 +1,0 @@
-[{"name":"Cactus","quantity":"20","branch":"city center"},
-{"name":"Lavander","quantity":"1","branch":"City center"},
-{"name":" Magnolia ","quantity":"40","branch":"city center"},
-{"name":"Aloe","quantity":"15","branch":"city center"},
-{"name":"Fern","quantity":"16","branch":"city center"},
-{"name":"Sago Palm","quantity":"1","branch":"City center"}]

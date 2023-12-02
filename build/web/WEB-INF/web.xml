@@ -6,9 +6,9 @@
         </session-timeout>
     </session-config>
     <security-constraint>
-        <display-name>saller area</display-name>
+        <display-name>seller area</display-name>
         <web-resource-collection>
-            <web-resource-name>saller</web-resource-name>
+            <web-resource-name>seller</web-resource-name>
             <description/>
             <url-pattern>/client.html</url-pattern>
             <url-pattern>/addproduct.html</url-pattern>
@@ -16,7 +16,7 @@
         </web-resource-collection>
         <auth-constraint>
             <description/>
-            <role-name>saller</role-name>
+            <role-name>seller</role-name>
         </auth-constraint>
     </security-constraint>
     <security-constraint>
@@ -43,7 +43,7 @@
     </login-config>
     <security-role>
         <description/>
-        <role-name>saller</role-name>
+        <role-name>seller</role-name>
     </security-role>
     <security-role>
         <description/>

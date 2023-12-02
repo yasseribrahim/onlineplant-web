@@ -1,0 +1,36 @@
+SMAP
+seller_002dtransactions_jsp.java
+JSP
+*S JSP
+*F
++ 0 seller-transactions.jsp
+seller-transactions.jsp
++ 1 imports.jsp
+includes/imports.jsp
++ 2 header.jsp
+includes/header.jsp
++ 3 footer.jsp
+includes/footer.jsp
++ 4 tail.jsp
+includes/tail.jsp
+*L
+1,8:55
+8,5:63
+1#1,10:68
+12#0,13:77
+2#2,6:91
+7,16:97
+23:113,3
+24,14:116
+24#0,22:130
+46:152,3
+47:155
+48,5:156,3
+53:171
+54:172,3
+55,10:175
+1#3,9:185
+64#0,9:194
+1#4,29:203
+72#0,4:232
+*E

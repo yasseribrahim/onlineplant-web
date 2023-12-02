@@ -33,7 +33,7 @@ public class apsoap {
     public String getAllProducts() {
         JsonArray storeData101 = null;
         String filteredData101 = null;
-        String fname101 = Constants.PATH_DATA_PRODUCTS;
+        String fname101 = Constants.PATH_DATA_PLANTS;
         String output101 = "";
         storeData101 = DatasourceManager.readArray(fname101);
         String fileData101 = DatasourceManager.allProduct(storeData101);

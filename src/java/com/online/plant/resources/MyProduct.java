@@ -53,7 +53,7 @@ public class MyProduct {
                 + "product - <u>" + product + "</u></font>";
         JsonArray newArr = null;
         JsonArray storeData = null;
-        String fname = Constants.PATH_DATA_PRODUCTS;
+        String fname = Constants.PATH_DATA_PLANTS;
         storeData = DatasourceManager.readArray(fname);
         newArr = DatasourceManager.addJsonToArray(storeData,
         DatasourceManager.createProductObject(id, clientid, product, quantity, status, transid));
@@ -86,7 +86,7 @@ public class MyProduct {
                 + "product - <u>" + product + "</u></font>";
         JsonArray newArr = null;
         JsonArray storeData = null;
-        String fname = Constants.PATH_DATA_PRODUCTS;
+        String fname = Constants.PATH_DATA_PLANTS;
 
         storeData = DatasourceManager.readArray(fname);
         JsonObject productobj = DatasourceManager.getProduct(id, storeData);
@@ -122,7 +122,7 @@ public class MyProduct {
             @PathParam("transid") String transid) {
         System.out.print(id + "           &&&&&&&&&&&&&");
         JsonArray storeData = null, filteredData = null;
-        String fname = Constants.PATH_DATA_PRODUCTS;
+        String fname = Constants.PATH_DATA_PLANTS;
         String output = "<font face='verdana' size='12'>"
                 + "Online Plant"
                 + "</font>";

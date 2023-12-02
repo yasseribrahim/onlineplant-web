@@ -6,13 +6,14 @@
 package com.online.plant.resources;
 
 import java.util.Set;
+import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
 /**
  *
  * @author user
  */
-@javax.ws.rs.ApplicationPath("webresources")
+@ApplicationPath("webresources")
 public class ApplicationConfig extends Application {
 
     @Override
@@ -29,9 +30,8 @@ public class ApplicationConfig extends Application {
      * If required, comment out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
-        resources.add(com.online.plant.resources.MyProduct.class);
-        resources.add(com.online.plant.web.services.ProductsWebService.class);
+        resources.add(com.online.plant.web.services.PlansWebService.class);
+        resources.add(com.online.plant.web.services.PlansStockWebService.class);
         resources.add(com.online.plant.web.services.TransactionsWebService.class);
     }
-    
 }

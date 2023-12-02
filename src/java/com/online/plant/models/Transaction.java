@@ -4,18 +4,31 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Transaction {
+
     private int id;
-    private String sallerId;
+    private String sellerId;
     private String buyerId;
     private String date;
     private List<TransactionDetails> detailses;
 
-    public Transaction(int id, String sallerId, String buyerId, String date) {
+    public Transaction() {
+        this.detailses = new ArrayList<>();
+    }
+
+    public Transaction(int id, String sellerId, String buyerId, String date) {
         this.id = id;
-        this.sallerId = sallerId;
+        this.sellerId = sellerId;
         this.buyerId = buyerId;
         this.date = date;
         detailses = new ArrayList<>();
+    }
+
+    public int getTotal() {
+        int total = 0;
+        for (TransactionDetails detailse : detailses) {
+            total += detailse.getPrice() * detailse.getQuantity();
+        }
+        return total;
     }
 
     public int getId() {
@@ -26,12 +39,12 @@ public class Transaction {
         this.id = id;
     }
 
-    public String getSallerId() {
-        return sallerId;
+    public String getSellerId() {
+        return sellerId;
     }
 
-    public void setSallerId(String sallerId) {
-        this.sallerId = sallerId;
+    public void setSellerId(String sellerId) {
+        this.sellerId = sellerId;
     }
 
     public String getBuyerId() {
